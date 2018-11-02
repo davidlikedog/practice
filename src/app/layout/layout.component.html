@@ -1,0 +1,17 @@
+<mat-sidenav-container fxFlexFill>
+  <mat-sidenav #sidenav class="mine-nav">
+    <p>hello</p>
+  </mat-sidenav>
+  <div class="site">
+    <header>
+      <p>this is header</p>
+    </header>
+    <main>
+      <button mat-button (click)="sidenav.open()">点击划出</button>
+      <ng-content select="router-outlet"></ng-content>
+    </main>
+    <footer>
+      <p>this is footer</p>
+    </footer>
+  </div>
+</mat-sidenav-container>
